@@ -33,7 +33,6 @@ body {
 
 }
 
-
 .mem-input {
   width: 0;
   height: 0;
@@ -41,19 +40,17 @@ body {
 
 }
 
-
-.mem-input:checked~.mem-image {
+.mem-input:checked+.mem-title>.mem-image {
   max-height: 100vh;
 }
 
-.mem-input:hover~.mem-image {
+.mem-title:hover>.mem-image {
   max-height: 100vh;
   transition: 2s;
 }
 
-
-
 .mem-image {
+  display: block;
   max-height: 0;
   overflow: hidden;
 }
