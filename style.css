@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+body {
+  background-color: #F4E5BC;
+}
+
 .bayan {
   font-family: 'Roboto', sans-serif;
 }
@@ -11,7 +15,8 @@
 
 .mem-item {
   margin-bottom: 1%;
-  border: 0.5vh solid black;
+  border-bottom: 0.5vh solid black;
+
 }
 
 .mem-title {
@@ -20,29 +25,30 @@
   color: black;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
 
 }
+
 
 .mem-input {
   width: 0;
   height: 0;
   appearance: none;
-  /* position: absolute; */
 
 }
 
-.mem-image:hover {
-  transition: all 1s;
-}
 
-.mem-input:checked+.mem-image {
+.mem-input:checked~.mem-image {
   max-height: 100vh;
 }
 
-.mem-input:hover+.mem-image {
+.mem-input:hover~.mem-image {
   max-height: 100vh;
   transition: 2s;
 }
+
+
 
 .mem-image {
   max-height: 0;
@@ -55,4 +61,5 @@ img {
   margin-right: auto;
   width: 50%;
   height: 50%;
+  cursor: pointer;
 }
