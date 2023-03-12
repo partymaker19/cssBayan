@@ -16,12 +16,11 @@ body {
 .mem-item {
   margin-bottom: 1%;
   border-bottom: 0.5vh solid black;
-
 }
 
 .mem-title {
   display: block;
-  padding: 10px 15px;
+  padding: 0.3em 0.8em;
   color: black;
   cursor: pointer;
   font-family: 'Roboto', sans-serif;
@@ -59,7 +58,36 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 60%;
   height: 50%;
   cursor: pointer;
+  padding-bottom: 0.2em;
+}
+
+@media(max-width: 1100px) {
+  .mem-title {
+    font-size: 1em;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  .mem {
+    max-width: 80%;
+  }
+}
+
+@media(max-width: 430px) {
+  .mem {
+    max-width: 80%;
+  }
+
+  .mem-title {
+    font-size: 0.7em;
+  }
+
+  img {
+    width: 90%;
+  }
 }
