@@ -49,6 +49,11 @@ body {
   transition: 2s;
 }
 
+input[type="radio"]+label:active>.title-plus,
+input[type="radio"]+label:active>.mem-image {
+  opacity: 50%;
+}
+
 .mem-image {
   display: block;
   max-height: 0;
